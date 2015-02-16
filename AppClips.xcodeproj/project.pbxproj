@@ -13,8 +13,8 @@
 		5FFE00271A91775500A8471C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FFE00261A91775500A8471C /* Images.xcassets */; };
 		5FFE002A1A91775600A8471C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FFE00281A91775500A8471C /* LaunchScreen.xib */; };
 		5FFE00411A91778B00A8471C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FFE00401A91778B00A8471C /* Main.storyboard */; };
-		5FFE00431A91779100A8471C /* AppClips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE00421A91779100A8471C /* AppClips.swift */; };
 		5FFE00451A91783C00A8471C /* clip-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FFE00441A91783C00A8471C /* clip-icon.png */; };
+		5FFE005A1A917DF200A8471C /* AppClips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE00591A917DF200A8471C /* AppClips.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		5FFE00291A91775500A8471C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5FFE003F1A91778100A8471C /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		5FFE00401A91778B00A8471C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		5FFE00421A91779100A8471C /* AppClips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppClips.swift; sourceTree = "<group>"; };
 		5FFE00441A91783C00A8471C /* clip-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clip-icon.png"; sourceTree = "<group>"; };
+		5FFE00591A917DF200A8471C /* AppClips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppClips.swift; path = Source/AppClips.swift; sourceTree = SOURCE_ROOT; };
 		BBE003B10079057355348716 /* libPods-AppClips.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppClips.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -66,8 +66,8 @@
 		5FFE001C1A91775500A8471C /* AppClips */ = {
 			isa = PBXGroup;
 			children = (
+				5FFE00591A917DF200A8471C /* AppClips.swift */,
 				5FFE00441A91783C00A8471C /* clip-icon.png */,
-				5FFE00421A91779100A8471C /* AppClips.swift */,
 				5FFE001F1A91775500A8471C /* AppDelegate.swift */,
 				5FFE00211A91775500A8471C /* ViewController.swift */,
 				5FFE00261A91775500A8471C /* Images.xcassets */,
@@ -212,7 +212,7 @@
 			files = (
 				5FFE00221A91775500A8471C /* ViewController.swift in Sources */,
 				5FFE00201A91775500A8471C /* AppDelegate.swift in Sources */,
-				5FFE00431A91779100A8471C /* AppClips.swift in Sources */,
+				5FFE005A1A917DF200A8471C /* AppClips.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
