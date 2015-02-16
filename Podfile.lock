@@ -1,0 +1,26 @@
+PODS:
+  - CocoaAsyncSocket (7.4.1)
+  - CocoaHTTPServer (2.3):
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+  - CocoaLumberjack (2.0.0-rc):
+    - CocoaLumberjack/Default
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (2.0.0-rc)
+  - CocoaLumberjack/Default (2.0.0-rc):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.0-rc):
+    - CocoaLumberjack/Default
+  - RoutingHTTPServer (1.0.0):
+    - CocoaHTTPServer (~> 2.3)
+
+DEPENDENCIES:
+  - RoutingHTTPServer (~> 1.0)
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: b0a1a89e7ea4c1c0ea4ec83f57d55117d3cdae06
+  CocoaHTTPServer: 217df4cba4e48803db2480f97b805aaad2230dd1
+  CocoaLumberjack: 6186e27827fc574b50b16c10102fcc591437f06c
+  RoutingHTTPServer: 38888344bec8f1b202d18c62b0146cb33b8ada88
+
+COCOAPODS: 0.34.4

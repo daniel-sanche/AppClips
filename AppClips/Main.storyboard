@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kVe-AA-OLv">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+    </dependencies>
+    <scenes>
+        <!--App Clip Demo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebClip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clip-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="4fu-f3-Gs3">
+                                <rect key="frame" x="213" y="213" width="174" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="9IP-Gw-jQ1"/>
+                                    <constraint firstAttribute="height" constant="174" id="B9a-RN-xbA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Nl-GU-Inr">
+                                <rect key="frame" x="239" y="463" width="123" height="30"/>
+                                <state key="normal" title="Generate AppClip">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="brnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w9W-Ad-TDu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="4fu-f3-Gs3" secondAttribute="centerY" id="9b1-S2-dgd"/>
+                            <constraint firstAttribute="centerX" secondItem="4fu-f3-Gs3" secondAttribute="centerX" id="NCx-Vk-PaW"/>
+                            <constraint firstItem="9Nl-GU-Inr" firstAttribute="top" secondItem="4fu-f3-Gs3" secondAttribute="bottom" constant="76" id="fIf-mw-lJ5"/>
+                            <constraint firstAttribute="centerX" secondItem="9Nl-GU-Inr" secondAttribute="centerX" id="gbw-JB-4Nb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="App Clip Demo" id="RWR-Of-T9F"/>
+                    <connections>
+                        <outlet property="imageView" destination="4fu-f3-Gs3" id="cdZ-2I-yRT"/>
+                        <segue destination="bmf-1n-I9B" kind="show" identifier="push" id="tBQ-ra-D6I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="803" y="527"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0gk-5r-7jJ">
+            <objects>
+                <viewController id="bmf-1n-I9B" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w0M-aT-B6o"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xu7-Kq-9Rv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1C4-dg-gIM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Launched From An AppClip!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doE-ai-gpz">
+                                <rect key="frame" x="175" y="281.5" width="250" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congrats!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAo-AS-WWd">
+                                <rect key="frame" x="244.5" y="224" width="111" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="doE-ai-gpz" secondAttribute="centerY" constant="8.5" id="Tp5-LB-rds"/>
+                            <constraint firstAttribute="centerY" secondItem="SAo-AS-WWd" secondAttribute="centerY" constant="60.5" id="YER-09-ou0"/>
+                            <constraint firstAttribute="centerX" secondItem="doE-ai-gpz" secondAttribute="centerX" id="mur-Yl-HGi"/>
+                            <constraint firstAttribute="centerX" secondItem="SAo-AS-WWd" secondAttribute="centerX" id="v9S-UL-wZN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CJB-5j-VLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="89"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kvf-TB-QIy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kVe-AA-OLv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0w0-PC-k9u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eYr-zV-nj7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uXB-IC-7M7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="527"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clip-icon.png" width="72" height="72"/>
+    </resources>
+</document>
