@@ -52,7 +52,6 @@ class AppClips: NSObject {
         self.server.stop()
         
         if self.bgTask != UIBackgroundTaskInvalid {
-            println("ended")
             UIApplication.sharedApplication().endBackgroundTask(self.bgTask)
             self.bgTask = UIBackgroundTaskInvalid
         }
