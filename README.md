@@ -1,7 +1,7 @@
 AppClips
 =====================
 
-AppClips is a library that allows you to easily install webclips onto the user's homescreen. This can be useful for launching 3rd party apps, or for launching your own app into different contexts using url schemes. This library was inspired by this conversation on [Stack Overflow](http://stackoverflow.com/questions/2338035/installing-a-configuration-profile-on-iphone-programmatically) 
+AppClips is a library that allows you to easily install webclips onto the user's homescreen. This can be useful for launching 3rd party apps, or for launching your own app into different contexts using url schemes. This tool was inspired by a conversation on [Stack Overflow](http://stackoverflow.com/questions/2338035/installing-a-configuration-profile-on-iphone-programmatically) 
 
 ##Set Up
 
@@ -18,7 +18,7 @@ let appClipGenerator = AppClips(clipURL: "appcliplaunch://",  name:"Launcher", r
 
 After an instance is created, it must be launched with the startServer() method. This will launch Safari to prompt the user to install the AppClip
 
-After the user returns back to the app, you must remember to call stopServer(). This is necessary to stop the httpserver that was running in the background, and to stop the app from requesting to run in the background any more than necessary.
+After the user returns back to the app, you must remember to call stopServer(). This is needed to stop the httpserver that was running in the background, and to stop the app from requesting to run in the background any more than necessary.
 
 
 ##License
